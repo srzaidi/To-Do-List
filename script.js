@@ -14,7 +14,8 @@ function loadTasks() {
 // Add Task
 addTaskButton.addEventListener("click", () => {
   const taskText = taskInput.value.trim();
-  if (taskText === "") return;
+  if (taskText === "") 
+    alert('You have not entered anything!');
 
   const task = { text: taskText, completed: false };
   addTaskToDOM(task);
